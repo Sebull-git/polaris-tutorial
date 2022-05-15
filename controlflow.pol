@@ -1,0 +1,27 @@
+# if
+#if(5 == 5) then {
+#    print("5!!!"); # Fehler gefunden 5 == 5 false
+#}
+#else{
+#    print("Keine Fünf :("); 
+#};
+
+#print(if "5" == "5" then  5 else "Keine Fünf"); # if returned den Wert
+
+
+# while
+let rec while(condition, function) = {
+    if condition() then {
+        function();
+        while(condition, function);
+    }
+    else{
+        ()
+    }
+};
+
+# while als for loop
+let x = 5;
+while(\() -> x > 0,\() -> {
+    print("hello world"); x = x - 1    
+}); 

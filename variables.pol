@@ -1,0 +1,8 @@
+#!/usr/bin/env polaris
+
+let x = "I am in print" in print(x); # oberes x existiert nur im Ausdruck rechts davon
+# same as
+let x = 5;
+print(x);
+
+{print(5);}

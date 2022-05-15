@@ -1,0 +1,11 @@
+#!/usr/bin/env polaris
+
+# As function
+let f(x) = x * x;
+print(f(5));
+
+
+# As Lambda 
+let f = \x -> x * x;
+print(f(5));
+

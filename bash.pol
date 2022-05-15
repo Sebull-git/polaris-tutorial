@@ -1,0 +1,6 @@
+#/usr/bin/env polaris
+# How to use the '!' in Polaris for shell commands
+
+# Hello World!!
+print(!bash "-c" "echo Hallo Welt");
+

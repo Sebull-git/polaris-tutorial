@@ -1,0 +1,49 @@
+#!/usr/bin/env polaris
+
+
+# Random Number generators 
+let rand2() = parseInt(!bash "-c" "echo $(( $RANDOM % 2 ))");
+let rand10() = parseInt(!bash "-c" "echo $(( $RANDOM % 10 ))");
+
+print("You died");
+
+# First beast battle
+print("The power of the mighty beast has been chosen");
+# Beast get's power
+let beast = rand2();
+
+# Player has to choose his number
+print("Choose your Power!(0 - 1)");
+let tarnished = parseInt(readLine());
+
+# Check for Cheaters
+if tarnished > 2 then
+  print("You are just too weak lol")
+else
+  ();
+if tarnished > beast then
+  print("You killed the beast")
+else {
+  print("You died (SUCKER)");
+  exit(1);
+};
+  
+
+print("Boss Battle Run or Die (Just a joke you can't run");
+let boss = rand10();
+print("The power of the mighty Titan has been chosen");
+print("Choose your power you little scum (1-10)");
+tarnished := parseInt(readLine());
+if tarnished > 10 then
+  {print("You are fulfilled by your powers... THAT ARE TO GREAT FOR YOU");
+  print("You died LOL")}
+else
+  ();
+if tarnished >= boss then {
+  print("You killed the mighty boss"); 
+  print("You won the Game!! Wasn't that easy?");
+}
+else{
+  print("You died SUCKER");
+  exit(1)};
+
